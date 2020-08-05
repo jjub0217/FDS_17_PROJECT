@@ -538,7 +538,6 @@ figcaption div::after {
   background-color: #c3ded9;
   background-position: 600px 60px;
   background-size: 1000px;
-  background-attachment: scroll;
   animation: newsanime 2s forwards;
 }
 .news__heading {
@@ -581,7 +580,7 @@ figcaption div::after {
   }
   100% {
     opacity: 1;
-    background-image: url(starbucksimg/summer2_reserve_bean.png);
+    background-image: url(/starbucksimg/summer2_reserve_bean.png);
   }
 }
 .favorite{
