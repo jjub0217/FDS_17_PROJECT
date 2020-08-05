@@ -101,7 +101,7 @@
   overflow: hidden;
   padding-top: 34px;
   margin-right: 60px;
-  background: #fff url("../starbucksimg/icon_magnifier_black.png") no-repeat
+  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat
     center;
 }
 .form__btnSearch:focus,
@@ -122,7 +122,7 @@
   /* background-color: #70C4D9; */
   height: 650px;
   background-color: #70c4d9;
-  background-image: url(/star/summer3_mv_bg.png);
+  background-image: url(/starbucksimg/summer3_mv_bg.jpg);
   width: 100%;
   background-repeat: no-repeat;
 }
@@ -538,7 +538,7 @@ figcaption div::after {
   background-color: #c3ded9;
   background-position: 600px 60px;
   background-size: 1000px;
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
   animation: newsanime 2s forwards;
 }
 .news__heading {
@@ -581,7 +581,7 @@ figcaption div::after {
   }
   100% {
     opacity: 1;
-    background-image: url(starbucksimg/summer2_reserve_bean.png);
+    background-image: url(/starbucksimg/summer2_reserve_bean.png);
   }
 }
 .favorite{
@@ -602,24 +602,24 @@ figcaption div::after {
 .favorite__subParagraph2{
   animation: adanime1 2s 300ms ease-in-out;
 }
-.favorite__paragraph span{
+.favorite__heading span{
   display: block;
   width: 400px;
   text-align: right;
 }
 
-.favorite__paragraph span:nth-child(1){
+.favorite__heading span:nth-child(1){
   font-size: 9rem;
   font-weight: 700;
   letter-spacing: 15px;
 }
 
-.favorite__paragraph span:nth-child(2){
+.favorite__heading span:nth-child(2){
   font-size: 8rem;
   font-weight: 500;
   letter-spacing: 14px;
 }
-.favorite__paragraph span:nth-child(3){
+.favorite__heading span:nth-child(3){
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: .9rem;
