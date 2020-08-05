@@ -869,4 +869,234 @@ figcaption div::after {
   background-color: #aaa;
 }
 
-
+/* Store */
+.store{
+  height: 400px;
+  color: #444;
+  background-image: url(/starbucksimg/store_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.store .inner{
+  position: relative;
+}
+.store__wrapper{
+  float: right;
+  padding-top: 100px;
+  padding-right: 80px;
+}
+.store__heading{
+  animation: storeAni 3s both;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.store__heading span{
+  display: block;
+}
+.store__heading span:first-child{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.store__heading span:last-child{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.store__paragraph{
+  animation: storeAni 3s 0.3s both;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.store__paragraph span{
+  display: block;
+}
+.store__paragraph em{
+  font-weight: 700;
+}
+.store__link{
+  animation: linkAni 3s 1s both;
+  display: block;
+  width: 120px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+.store__link:hover{
+  color: #fff;
+  text-decoration: underline;
+  background-color: #000;
+  transition: 1s;
+}
+.store__sample1{
+  animation: storeImgAni 2s;
+  z-index: 5;
+  background-image: url(/starbucksimg/store_exp_img01.png);
+  width: 228px;
+  height: 228px;
+  position: absolute;
+  top: 150px;
+  left: 300px;
+}
+.store__sample2{
+  animation: storeImgAni 2s;
+  z-index: 4;
+  background-image: url(/starbucksimg/store_exp_img02.png);
+  width: 366px;
+  height: 312px;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+.store__sample3{
+  animation: storeImgAni 2s;
+  z-index: 4;
+  background-image: url(/starbucksimg/store_exp_img03.png);
+  width: 343px;
+  height: 142px;
+  position: absolute;
+  top: -60px;
+  left: 430px;
+}
+.store__sample4{
+  animation: storeImgAni 2s;
+  z-index: 4;
+  background-image: url(/starbucksimg/store_exp_img04.png);
+  width: 230px;
+  height: 102px;
+  position: absolute;
+  top: 298px;
+  right: 0;
+}
+/* Store Animation */
+@keyframes storeImgAni{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes storeAni{
+  0%{
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes linkAni{
+  0%{
+    transform: translateX(600%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/* 푸터 */
+.footer {
+  background-color: #2c2a29;
+  padding-top: 45px;
+}
+.footer__list-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.footer__list {
+  color: #eee;
+  font-size: 1.2rem;
+}
+.footer__list li:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.footer__list a {
+  display: block;
+  padding: 5px 0;
+}
+.footer__list a:hover {
+  text-decoration: underline;
+}
+.footer__awardList {
+  background-color: #282828;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.footer__awardList li {
+}
+.footer__awardList img {
+  width: 180px;
+  height: 40px;
+}
+/*footer__nav*/
+.footer__nav {
+  font-size: 0;
+  color: #ccc;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer__nav li {
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 500;
+  border-right: 1px solid #aaa;
+}
+.footer__nav li:first-child {
+  color: #00b050;
+}
+.footer__nav li:last-child {
+  border-right: none;
+}
+.footer__nav a {
+  padding: 5px 10px;
+}
+.footer__nav li > a:hover {
+  text-decoration: underline;
+}
+/*siteMap*/
+.footer__siteMap {
+  font-size: 0;
+  text-align: center;
+}
+.footer__siteMap a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 15px;
+  border: 2px solid #eee;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.footer__siteMap a:hover {
+  text-decoration: underline;
+}
+/*address*/
+.address {
+  color: #999;
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+}
+.copyright {
+  color: #999;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+}
