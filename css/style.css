@@ -1,4 +1,6 @@
 
+/* 헤더 */
+
 .header {
   z-index: 10;
   background-color: #f6f5ef;
@@ -8,37 +10,43 @@
   position: fixed;
   height: 120px;
 }
+
 .header .inner {
   display: flex;
   align-items: center;
 }
+
 .header__logo {
   float: left;
 }
+
 .header__logo img {
   width: 75px;
   height: 75px;
-  /* width: 100%;
-  height: 100%; */
 }
-.section .inner {
-}
+
 .flex-group {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
 }
+
+
+/* 네비게이션 */
+
 .nav {
-  order: 2;
+  order: 1;
 }
+
 .nav__menu {
-  /* margin-top: 20px; */
   margin-right: 50px;
 }
+
 .nav__menu li {
   display: inline-block;
 }
+
 .nav__menuItem > a {
   display: block;
   padding: 10px 20px 30px 20px;
@@ -46,32 +54,40 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+
 .nav__menuItem > a:hover {
   background-color: #2c2a29;
   color: #669900;
   text-decoration: underline;
 }
+
 .unList__userLink {
   font-size: 0;
 }
+
 .unList__userLink li {
   display: inline-block;
   border-right: 1px solid #ccc;
 }
+
 .unList__userLink li:last-child {
   border-right: none;
 }
+
 .unList__userLink a {
   font-size: 1.2rem;
   padding: 5px 16px;
 }
+
 .unList__userLink a:hover {
   text-decoration: underline;
 }
+
 .form {
   margin: 10px 40px 0 5px;
   position: relative;
 }
+
 .form input {
   display: none;
   position: absolute;
@@ -83,13 +99,13 @@
   border: 0;
   border-radius: 5px;
 }
-/*추후 js로 버튼 컨트롤 추가 예정*/
+
 .form [type="search"].isSearch {
   display: block;
   z-index: 1;
   width: calc(100% - 32px);
 }
-/* IR기법 해결 - padding trick */
+
 .form__btnSearch {
   padding: 0;
   border: 0;
@@ -104,11 +120,13 @@
   background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat
     center;
 }
+
 .form__btnSearch:focus,
 .form__btnSearch:hover {
   background-position: right;
   animation: anime 500ms both;
 }
+
 @keyframes anime {
   0% {
     width: 32px;
@@ -117,29 +135,33 @@
     width: 180px;
   }
 }
-/* Article */
+
+
+/* 슬로건 */
+
 .slogan {
-  /* background-color: #70C4D9; */
   height: 650px;
   background-color: #70c4d9;
   background-image: url(/starbucksimg/summer3_mv_bg.jpg);
   width: 100%;
   background-repeat: no-repeat;
 }
+
 .slogan__div {
   display: flex;
 }
+
 .slogan .inner {
   margin: 0 auto;
   position: relative;
-  /* width: 1100px; */
 }
+
 .slogan__img {
-  /* background-color: blue; */
   padding-top: 50px;
   opacity: 0;
   animation: sloganAni 1s ease-in-out 1.5s both;
 }
+
 .slogan__link {
   margin: 0;
   padding: 0;
@@ -158,10 +180,12 @@
   opacity: 0;
   animation: sloganAni 1s ease-in-out 2s both;
 }
+
 .slogan__link:hover {
   background-color: #00a252;
   text-decoration: underline;
 }
+
 .slogan__figure1 {
   position: absolute;
   top: 240px;
@@ -169,6 +193,7 @@
   opacity: 0;
   animation: sloganAni 1s ease-in-out 0.5s both;
 }
+
 .slogan__figure2 {
   position: absolute;
   top: 80px;
@@ -176,6 +201,7 @@
   opacity: 0;
   animation: sloganAni 1s ease-in-out both;
 }
+
 .slogan__figure3 {
   position: absolute;
   top: 200px;
@@ -183,60 +209,69 @@
   opacity: 0;
   animation: sloganAni 1s ease-in-out 1s both;
 }
+
 .slogan__figure1 img {
-  /* width: 290px; */
   width: 100%;
   max-width: 290px;
 }
+
 .slogan__figure2 img {
-  /* width: 180px; */
   width: 100%;
   max-width: 180px;
 }
+
 .slogan__figure3 img {
-  /* width: 320px; */
   width: 100%;
   max-width: 320px;
 }
+
 .slogan figcaption {
   color: #fff;
   font-size: 1.7rem;
   font-weight: 400;
 }
+
 .slogan__figcaption1 {
   position: absolute;
   top: 220px;
   left: -170px;
 }
+
 .slogan__figcaption2 {
   position: absolute;
   top: 20px;
   left: -230px;
 }
+
 .slogan__figcaption3 {
   position: absolute;
   top: 360px;
   left: 80px;
 }
+
 .slogan figcaption span {
   display: block;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.4;
 }
+
 .slogan span:nth-child(1)::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
   margin: 5px 0;
 }
+
 .slogan__figcaption2 span:nth-child(1)::after {
   border: none;
 }
+
 figcaption div {
   text-align: center;
   text-transform: uppercase;
 }
+
 figcaption div::after {
   content: "";
   display: block;
@@ -244,6 +279,7 @@ figcaption div::after {
   margin: 0;
   margin: 10px 0;
 }
+
 @keyframes sloganAni {
   0% {
     opacity: 0;
@@ -252,7 +288,10 @@ figcaption div::after {
     opacity: 1;
   }
 }
-/* Section1 */
+
+
+/* 공지사항 */
+
 .notice {
   height: 60px;
   text-align: center;
@@ -260,6 +299,7 @@ figcaption div::after {
   color: #fff;
   padding: 15px 0;
 }
+
 .notice__heading {
   display: inline-block;
   font-size: 1.6rem;
@@ -267,6 +307,7 @@ figcaption div::after {
   vertical-align: middle;
   margin-right: 100px;
 }
+
 .notice__list {
   display: inline-block;
   font-size: 1.4rem;
@@ -276,17 +317,21 @@ figcaption div::after {
   overflow: hidden;
   margin-right: 40px;
 }
+
 .notice__list li {
   animation: listanime 5s linear infinite alternate;
   margin-bottom: 10px;
 }
+
 .notice__list a {
   display: block;
   padding: 5px 400px 0 0;
 }
+
 .notice__list a:hover {
   text-decoration: underline;
 }
+
 .notice__link {
   vertical-align: middle;
   font-size: 3rem;
@@ -298,7 +343,7 @@ figcaption div::after {
   height: 30px;
   line-height: 0.8;
 }
-/* Notice Animation */
+
 @keyframes listanime {
   0% {
     transform: translateY(0%);
@@ -307,11 +352,12 @@ figcaption div::after {
     transform: translateY(-510%);
   }
 }
-/* Section2 */
+
+
+/* 리워드 */
+
 .memberService {
-  /* height: auto; */
   height: 260px;
-  /* background-color: #272727; */
   padding: 20px 50px;
   padding-right: 0;
   background-image: url(/starbucksimg/reward_star_bg_m.png),
@@ -324,12 +370,14 @@ figcaption div::after {
   flex-flow: row nowrap;
   align-content: center;
 }
+
 .memberService .inner {
   margin-left: 100px;
   display: flex;
   flex-flow: column;
   position: relative;
 }
+
 .memberService__heading {
   font-size: 2rem;
   font-weight: 400;
@@ -338,39 +386,42 @@ figcaption div::after {
   padding-bottom: 10px;
   margin-top: 20px;
 }
+
 .memberService__heading em {
   font-weight: 700;
 }
+
 .memberService__logDes {
   font-size: 1.5rem;
   font-weight: 400;
   padding-left: 25px;
   margin-bottom: 20px;
   color: #666;
-  /* width: 530px; */
   display: flex;
   flex-flow: row nowrap;
   line-height: 1.4;
   word-spacing: 1px;
-  /* padding-right: 450px; */
-  /* padding-right: 240px; */
 }
+
 .memberService__logDes p em {
   display: inline-block;
 }
+
 .memberService__logDes p {
   flex-grow: 1;
 }
+
 .memberService__logDes em {
   font-weight: 700;
   color: #555;
 }
-/* 클래스명 변경 */
+
 .memberService__signGroup {
   position: absolute;
   top: 35px;
   right: 50px;
 }
+
 .memberService__logDes-signUp {
   display: inline-block;
   padding: 8px 30px;
@@ -382,6 +433,7 @@ figcaption div::after {
   margin-top: 10px;
   margin-right: 5px;
 }
+
 .memberService__logDes-signIn {
   display: inline-block;
   padding: 8px 35px;
@@ -390,19 +442,20 @@ figcaption div::after {
   color: #000;
   border-radius: 3px;
   transition: all 500ms linear;
-  /* margin-top: 10px; */
-  /* margin-right: 5px; */
 }
+
 .memberService__logDes-signUp:hover {
   text-decoration: underline;
   background-color: transparent;
   color: #000;
 }
+
 .memberService__logDes-signIn:hover {
   text-decoration: underline;
   background-color: #000;
   color: #fff;
 }
+
 .memberService__giftDes {
   padding-left: 25px;
   margin-top: 20px;
@@ -410,18 +463,15 @@ figcaption div::after {
   line-height: 1.4;
   font-weight: 400;
   color: #666;
-  /* padding-right: 520px; */
   position: relative;
 }
-/* .memberService__logDes p em {
-  display: inline-block;
-} */
+
 .memberService__giftDes em {
   font-weight: 700;
   display: block;
   color: #555;
 }
-/* 클래스명 추가 */
+
 .memberService__giftLink {
   position: absolute;
   top: 0;
@@ -432,26 +482,30 @@ figcaption div::after {
   color: #000;
   border-radius: 3px;
   transition: all 500ms linear;
-  /* margin-top: 10px; */
-  /* margin-right: 5px; */
   transition: all 500ms linear;
 }
+
 .memberService__giftLink:hover {
   text-decoration: underline;
   background-color: #000;
   color: #fff;
 }
+
 .memberService__logo {
   order: -1;
   width: 200px;
   height: 50px;
   align-self: center;
 }
+
 .memberService__logDes span,
 .memberService__giftDes span {
   display: block;
 }
-/* Section3 */
+
+
+/* 광고 */
+
 .ad {
   height: 570px;
   background-image: url(/starbucksimg/20_summer_rwanda_bg.jpg);
@@ -461,8 +515,7 @@ figcaption div::after {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.ad__figure {
-}
+
 .ad__figure img {
   float: left;
   padding-left: 150px;
@@ -470,35 +523,36 @@ figcaption div::after {
   animation: adanime1 2s;
   padding-bottom: 55px;
 }
+
 .ad__figcaption {
   float: left;
   padding-left: 115px;
   padding-top: 170px;
   line-height: 1.5;
   animation: adanime 2s;
-  /* margin-left: 90px; */
 }
+
 .ad__figcaption-selling {
   font-size: 2rem;
   color: #bae1c6;
-  /* margin-left: 390px; */
-  /* display: inline-block; */
 }
+
 .ad__figcaption-selling span {
   font-size: 3rem;
   display: block;
 }
+
 .ad__figcaption-sellingDes {
   color: #fff;
   font-size: 1.7rem;
   padding-top: 15px;
   opacity: 0.8;
-  /* margin-left: 390px; */
-  /* display: inline-block; */
 }
+
 .ad__figcaption-sellingDes span {
   display: block;
 }
+
 .ad__link {
   font-size: 1.5rem;
   display: inline-block;
@@ -510,11 +564,13 @@ figcaption div::after {
   transition: all 500ms linear;
   margin-top: 45px;
 }
+
 .ad__link:hover {
   color: #000;
   background-color: #fff;
   text-decoration: underline;
 }
+
 @keyframes adanime {
   0% {
     transform: translateX(200%);
@@ -523,6 +579,7 @@ figcaption div::after {
     transform: translateX(0%);
   }
 }
+
 @keyframes adanime1 {
   0% {
     transform: translateX(-200%);
@@ -531,20 +588,24 @@ figcaption div::after {
     transform: translateX(0%);
   }
 }
-/* News */
+
+
+/* 새소식 */
+
 .news {
   height: 400px;
   background-repeat: no-repeat;
   background-color: #c3ded9;
   background-position: 600px 60px;
   background-size: 1000px;
-  /* background-attachment: scroll; */
   animation: newsanime 2s forwards;
 }
+
 .news__heading {
   padding-top: 80px;
   margin-left: -130px;
 }
+
 .news a {
   display: flex;
   padding: 10px 15px;
@@ -559,11 +620,13 @@ figcaption div::after {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
 .news a:hover {
   background: #000;
   text-decoration: underline;
   color: #eee;
 }
+
 .news__list {
   list-style: square;
   color: #5b6567;
@@ -571,9 +634,11 @@ figcaption div::after {
   margin-left: 70px;
   font-size: 1.4rem;
 }
+
 .news__list li {
   line-height: 1.5;
 }
+
 @keyframes newsanime {
   0% {
     opacity: 0;
@@ -584,6 +649,7 @@ figcaption div::after {
     background-image: url(/starbucksimg/summer2_reserve_bean.png);
   }
 }
+
 .favorite{
   height: 800px;
   padding-top: 100px;
@@ -598,10 +664,12 @@ figcaption div::after {
 .favorite__heading{
   animation: adanime1 2s ease-in-out;
 }
+
 .favorite__subParagraph1,
 .favorite__subParagraph2{
   animation: adanime1 2s 300ms ease-in-out;
 }
+
 .favorite__heading span{
   display: block;
   width: 400px;
@@ -619,6 +687,7 @@ figcaption div::after {
   font-weight: 500;
   letter-spacing: 14px;
 }
+
 .favorite__heading span:nth-child(3){
   font-size: 4rem;
   font-weight: 600;
@@ -628,19 +697,21 @@ figcaption div::after {
 
 .favorite__subParagraph1{
   display: inline-block;
-  /* background-color: blue; */
   margin-top: 40px;
   text-align: right;
   width: 400px;
 }
+
 .favorite .inner{
   position: relative;
 }
+
 .favorite__subParagraph1 span{
   display: block;
   font-weight: 300;
   font-size: 3rem;
 }
+
 .favorite__subParagraph1 span em{
   font-weight: 500;
   letter-spacing: -1.5px;
@@ -649,20 +720,21 @@ figcaption div::after {
 
 .favorite__subParagraph2 {
   margin-top: 20px;
-
 }
+
 .favorite__subParagraph2 span{
   display: block;
-  /* background-color: blue; */
   font-size: 1.6rem;
   text-align: right;
   width: 400px;
   line-height: 1.5;
   font-weight: 200;
 }
+
 .favorite__subParagraph2 span em{
   font-weight: 400;
 }
+
 .favorite__img{
   position: absolute;
   top: 0;
@@ -703,6 +775,7 @@ figcaption div::after {
     transform: translateX(0%);
   }
 }
+
 @keyframes favoriteAni {
   0% {
     opacity: 0;
@@ -711,3 +784,4 @@ figcaption div::after {
     opacity: 1;
   }
 }
+
