@@ -1004,7 +1004,7 @@ figcaption div::after {
 /* 푸터 */
 .footer {
   background-color: #2c2a29;
-  padding-top: 45px;
+  padding-top: 20px;
 }
 .footer__list-group {
   display: flex;
