@@ -798,7 +798,7 @@ figcaption div::after {
   background-color: white;
   height: 700px;
   padding-top: 100px;
-
+  overflow: hidden;
   position: relative;
 }
 
