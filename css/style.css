@@ -929,7 +929,7 @@
 }
 
 
-/*siteMap*/
+/* 푸터 - 사이트맵*/
 
 .footer__siteMap {
   display: flex;
@@ -955,7 +955,8 @@
 }
 
 
-/*address*/
+/* 푸터 - address */
+
 .address {
   color: #999;
   margin: 30px 0;
