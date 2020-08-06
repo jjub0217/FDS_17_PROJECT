@@ -1,0 +1,58 @@
+@keyframes positivexAni {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes negativexAni {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes opacityAni {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes noticeAni {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-510%);
+    }
+  }
+
+  @keyframes magazineAni{
+    0%{
+      transform: translateX(400%);
+      opacity: 0;
+    }
+    100%
+    {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes storeAni{
+    0%{
+      transform: translateX(600%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
