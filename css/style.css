@@ -122,8 +122,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  
 }
+
 .form [type="search"].isSearch {
   width: 150px;
   border-top: 1px solid #aaa;
