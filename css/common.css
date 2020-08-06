@@ -59,7 +59,7 @@ span[aria-hidden=true]{
 .nav__subMenu {
   display: none;
 }
- 
+
 /* 버튼 공통 스타일 */
 .btn-com {
   display: flex;
@@ -79,3 +79,4 @@ span[aria-hidden=true]{
   text-decoration: underline;
 }
 
+ 
