@@ -105,8 +105,8 @@
   height: 37px;
   transition: 1s;
   border-radius: 5px 0 0 5px;
-  /* width: calc(100% - 38px); */
 }
+
 .form__btnSearch {
   padding: 0;
   border: 0;
@@ -117,7 +117,7 @@
   cursor: pointer;
   overflow: hidden;
   padding-top: 34px;
-  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
+  background: #fff url(../starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
 }
 .form [type="search"].isSearch {
   width: 150px;
