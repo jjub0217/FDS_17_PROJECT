@@ -502,17 +502,16 @@
 }
 
 
-
-
 /* 새소식 */
 
 .news {
   height: 400px;
   background-repeat: no-repeat;
   background-color: #C3D2D9;
-  background-position: 600px 60px;
+  background-position: right top 50px;
   background-size: 1000px;
-  animation: newsAni  2s forwards;
+  animation: opacityAni   2s forwards;
+  background-image: url(/starbucksimg/summer2_reserve_bean.png);
 }
 
 .news__heading {
