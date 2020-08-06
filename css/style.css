@@ -117,7 +117,12 @@
   cursor: pointer;
   overflow: hidden;
   padding-top: 34px;
-  background: #fff url(../starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
+  background-color: #fff;
+  background-image: url(../starbucksimg/icon_magnifier_black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  
 }
 .form [type="search"].isSearch {
   width: 150px;
