@@ -40,7 +40,6 @@ a:focus{
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-
 .clearfix::after {
   content: "";
   display: block;
@@ -54,4 +53,23 @@ a:focus{
 
 .nav__subMenu {
   display: none;
+}
+
+/* 버튼 공통 스타일 */
+.btn-com {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  width: 125px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+
+.btn-com:hover {
+  text-decoration: underline;
 }
