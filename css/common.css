@@ -26,6 +26,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+a:focus{
+  text-decoration: underline;
+}
+
 .a11yHidden {
   position: absolute;
   width: 1px;
