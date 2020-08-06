@@ -1,4 +1,19 @@
-(function( document){
+function btnSearch(window, document){
+  let form = document.querySelector('.form__btnSearch');
+  form.addEventListener('mouseover', function(e){
+    if(!e.target.matches('.form > fieldset > button')) {
+      return;
+    }
+    console.log(e.target);
+    const btn = e.target.previousSibling.previousSibling; 
+    console.log(e.target.previousSibling.previousSibling);
+    e.target.previousSibling.previousSibling.classList.toggle('isSearch')
+  })
+}
+btnSearch(window,document);
+
+
+function tabMove( document){
   'use strict'
   const $nav = document.getElementById('nav__menu');
   console.log($nav);
@@ -25,4 +40,5 @@
       }
     }
   }
-})( document)
+}
+tabMove(document);
