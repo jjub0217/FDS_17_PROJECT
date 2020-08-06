@@ -1,4 +1,6 @@
-/*navigation*/
+
+/* 네비게이션 */
+
 .nav__subMenu.isAct {
   display: flex;
   position: absolute;
@@ -8,38 +10,42 @@
   flex-flow: row wrap;
   padding: 20px 220px;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item {
-  /* width: 240px; */
   width: 20%;
   height: auto;
-  /* height: 200px; */
-  /* padding-left:20px ; */
 }
+
 .nav__subMenu.isAct .nav__subMenu-item h3 {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item-list {
   margin-top: 20px;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item-list:last-child {
   padding-bottom: 80px;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item-list li {
   margin-bottom: 5px;
   display: flex;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item-list li a {
   color: #999;
   font-weight: 400;
   font-size: 1.2rem;
 }
+
 .nav__subMenu.isAct .nav__subMenu-item h3 a:hover,
 .nav__subMenu.isAct .nav__subMenu-item-list li a:hover {
   text-decoration: underline;
 }
-/* 해상도 문제 해결 중 */
+
 .nav__desList {
   display: block;
   position: absolute;
@@ -48,9 +54,11 @@
   background: #2c2a29 url(/starbucksimg/gnb_sub_txbg.jpg);
   font-size: 1.5rem;
 }
+
 .nav__desList dt:first-child {
   margin-top: 0;
 }
+
 .nav__desList dt {
   color: #999;
   line-height: 1;
@@ -59,6 +67,7 @@
   margin-bottom: 5px;
   font-size: 1.2rem;
 }
+
 .nav__desList dd {
   color: #64a70b;
   font-size: 1.2rem;
@@ -75,18 +84,22 @@
   margin-left: 5px;
   padding: 2px 5px;
 }
+
 .nav__desList1 {
   top: 400px;
   left: 0;
 }
+
 .nav__desList2 {
   top: 220px;
   left: 0;
 }
+
 .nav__desList3 {
   top: 180px;
   left: 0;
 }
+
 .nav__desList4,
 .nav__desList5,
 .nav__desList6 {
