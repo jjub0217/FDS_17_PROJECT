@@ -1,13 +1,13 @@
 /* 헤더 */
 
 .header {
-  z-index: 10;
   background-color: #f6f5ef;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
   height: 120px;
+  z-index: 10;
 }
 
 .header .inner {
@@ -48,10 +48,10 @@
 
 .nav__menuItem > a {
   display: block;
-  padding: 10px 20px 30px 20px;
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
+  padding: 10px 20px 30px 20px;
 }
 
 .nav__menuItem > a:hover {
@@ -86,13 +86,13 @@
 }
 
 .form {
-  margin: 10px 40px 0 5px;
   position: relative;
+  margin: 10px 40px 0 5px;
 }
 
 .form input {
-  display: none;
   position: absolute;
+  display: none;
   top: 1px;
   left: 0;
   width: 32px;
@@ -109,7 +109,7 @@
 }
 
 .form__btnSearch {
-  padding: 0;
+  padding: 34px 0 0 0;
   border: 0;
   width: 32px;
   height: 34px;
@@ -117,7 +117,6 @@
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 34px;
   margin-right: 60px;
   background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
 }
@@ -131,17 +130,14 @@
 /* 슬로건 */
 
 .slogan {
+  background: #70c4d9 url(/starbucksimg/summer3_mv_bg.jpg) no-repeat center;
   height: 650px;
-  background-color: #70c4d9;
-  background-image: url(/starbucksimg/summer3_mv_bg.jpg);
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .slogan .inner {
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
 }
 
 .slogan__img {
@@ -202,11 +198,17 @@
   line-height: 1.4;
 }
 
-.slogan span:nth-child(1)::after {
+.slogan span:nth-child(1)::after,
+.slogan__figcaption2 span:nth-child(2)::after
+{
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
   margin: 5px 0;
+}
+
+.slogan__figcaption2 span:nth-child(1)::after {
+  border: none;
 }
 
 .slogan__figcaption1 {
@@ -227,14 +229,12 @@
   left: 80px;
 }
 
-.slogan__figcaption2 span:nth-child(1)::after {
-  border: none;
-}
+
 
 .slogan__link {
-  margin-top: 40px;
-  border: 2px solid #fff;
   color: #fff;
+  border: 2px solid #fff;
+  margin-top: 40px;
   opacity: 0;
   animation: opacityAni  1s ease-in-out 2s both;
 }
@@ -247,10 +247,10 @@
 /* 공지사항 */
 
 .notice {
-  height: 60px;
-  text-align: center;
   background-color: #111;
   color: #fff;
+  height: 60px;
+  text-align: center;
   padding: 15px 0;
 }
 
@@ -267,8 +267,8 @@
   font-size: 1.4rem;
   vertical-align: middle;
   height: 20px;
-  padding: 5px 0 10px;
   overflow: hidden;
+  padding: 5px 0 10px;
   margin-right: 40px;
 }
 
@@ -287,14 +287,14 @@
 }
 
 .notice__link {
-  vertical-align: middle;
-  font-size: 3rem;
-  font-weight: 400;
-  border: 2px solid #fff;
   display: inline-block;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
+  font-size: 3rem;
+  font-weight: 400;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 50%;
   line-height: 0.8;
 }
 
@@ -303,8 +303,7 @@
 
 .memberService {
   height: 260px;
-  padding: 20px 50px;
-  padding-right: 0;
+  padding: 20px 0 20px 50px;
   background-image: url(/starbucksimg/reward_star_bg_m.png),
     url(/starbucksimg/272727.png), url(/starbucksimg/reward_texbg.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -317,10 +316,10 @@
 }
 
 .memberService .inner {
-  padding-left: 150px;
+  position: relative;
   display: flex;
   flex-flow: column;
-  position: relative;
+  padding-left: 150px;
   margin: 0 auto;
   min-width: 1000px;
 }
@@ -338,18 +337,14 @@
 }
 
 .memberService__logDes {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: #666;
   display: flex;
   flex-flow: row nowrap;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #666;
   line-height: 1.4;
   word-spacing: 1px;
-}
-
-.memberService__logDes p em {
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .memberService__logDes p {
@@ -361,6 +356,10 @@
   color: #555;
 }
 
+.memberService__logDes p em {
+  display: inline-block;
+}
+
 .memberService__signGroup {
   position: absolute;
   top: 35px;
@@ -368,76 +367,45 @@
 }
 
 .memberService__logDes-signUp {
+  background-color: #000;
   display: inline-block;
   padding: 8px 30px;
   border: 1px solid #000;
-  background-color: #000;
   color: #fff;
   border-radius: 5px;
   transition: all 500ms linear;
-  margin-top: 10px;
-  margin-right: 5px;
+  margin-top: 10px 0 0 5px;
+}
+
+.memberService__logDes-signUp:hover {
+  background-color: transparent;
+  color: #000;
+  text-decoration: underline;
 }
 
 .memberService__logDes-signIn {
   display: inline-block;
+  background-color: transparent;
+  color: #000;
   padding: 8px 35px;
   border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
   border-radius: 3px;
   transition: all 500ms linear;
 }
-.memberService__logDes-signUp:hover {
-  text-decoration: underline;
-  background-color: transparent;
-  color: #000;
-}
+
 .memberService__logDes-signIn:hover {
-  text-decoration: underline;
   background-color: #000;
   color: #fff;
+  text-decoration: underline;
 }
+
 .memberService__giftDes {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  font-weight: 400;
-  color: #666;
   position: relative;
-}
-
-.memberService__giftDes em {
-  font-weight: 700;
-  display: block;
-  color: #555;
-}
-
-.memberService__giftLink {
-  position: absolute;
-  top: 0;
-  right: 50px;
-  padding: 8px 50px;
-  border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
-  border-radius: 3px;
-  transition: all 500ms linear;
-  transition: all 500ms linear;
-}
-
-.memberService__giftLink:hover {
-  text-decoration: underline;
-  background-color: #000;
-  color: #fff;
-}
-
-.memberService__logo {
-  order: -1;
-  width: 200px;
-  height: 50px;
-  margin-bottom: 50px;
-  margin-left: -60px;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .memberService__logDes span,
@@ -445,14 +413,45 @@
   display: block;
 }
 
+.memberService__giftDes em {
+  display: block;
+  font-weight: 700;
+  color: #555;
+}
+
+.memberService__giftLink {
+  position: absolute;
+  background-color: transparent;
+  color: #000;
+  top: 0;
+  right: 50px;
+  padding: 8px 50px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: all 500ms linear;
+}
+
+.memberService__giftLink:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.memberService__logo {
+  order: -1;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 0 0 50px -60px;
+}
+
 
 /* 광고 */
 
 .ad {
   height: 570px;
+  /* background: url(/starbucksimg/20_summer_rwanda_bg.jpg) cover center no-repeat; */
   background-image: url(/starbucksimg/20_summer_rwanda_bg.jpg);
   background-size: cover;
-  background-color: #dbebf8;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -460,35 +459,34 @@
 
 .ad__figure img {
   float: left;
-  padding-left: 150px;
-  padding-top: 75px;
-  padding-bottom: 55px;
+  padding: 75px 0 55px 150px;
   animation: negativexAni  2s;
 }
 
 .ad__figcaption {
   float: left;
-  padding-left: 115px;
-  padding-top: 170px;
+  padding: 170px 0 0 115px;
+  /* padding-left: 115px;
+  padding-top: 170px; */
   line-height: 1.5;
   animation: positivexAni 2s;
 }
 
 .ad__figcaption-selling {
-  font-size: 2rem;
   color: #bae1c6;
+  font-size: 2rem;
 }
 
 .ad__figcaption-selling span {
-  font-size: 3rem;
   display: block;
+  font-size: 3rem;
 }
 
 .ad__figcaption-sellingDes {
   color: #fff;
   font-size: 1.7rem;
-  padding-top: 15px;
   opacity: 0.8;
+  padding-top: 15px;
 }
 
 .ad__figcaption-sellingDes span {
@@ -496,14 +494,14 @@
 }
 
 .ad__link {
-  border: 2px solid #fff;
   color: #fff;
+  border: 2px solid #fff;
   margin-top: 45px;
 }
 
 .ad__link:hover {
-  color: #000;
   background-color: #fff;
+  color: #000;
 }
 
 
@@ -511,12 +509,13 @@
 
 .news {
   height: 400px;
-  background-repeat: no-repeat;
+  /* background: url(/starbucksimg/summer2_reserve_bean.png) no-repeat 1000px right top 50px ; */
+  background-image: url(/starbucksimg/summer2_reserve_bean.png);
   background-color: #C3D2D9;
+  background-repeat: no-repeat;
   background-position: right top 50px;
   background-size: 1000px;
   animation: opacityAni   2s forwards;
-  background-image: url(/starbucksimg/summer2_reserve_bean.png);
 }
 
 .news__heading {
@@ -526,40 +525,30 @@
 
 .news a {
   display: flex;
-  padding: 10px 15px;
-  border: 2px solid #000;
-  width: 100px;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  border: 2px solid #000;
   border-radius: 5px;
-  transition: 1s;
-  margin-left: 50px;
-  margin-top: 10px;
   font-size: 1.3rem;
   font-weight: 500;
+  padding: 10px 15px;
+  margin: 10px 0 0 50px;
+  /* margin-left: 50px;
+  margin-top: 10px; */
+  transition: 1s;
 }
 
 .news a:hover {
   background: #000;
-  text-decoration: underline;
   color: #eee;
-}
-
-.news__list {
-  list-style: square;
-  color: #5b6567;
-  margin-top: 20px;
-  margin-left: 70px;
-  font-size: 1.4rem;
-}
-
-.news__list li {
-  line-height: 1.5;
+  text-decoration: underline;
 }
 
 .news__link {
-  margin-left: 50px;
-  margin-top: 10px;
+  margin: 10px 0 0 50px;
+  /* margin-left: 50px;
+  margin-top: 10px; */
 }
 
 .news__link:hover {
@@ -567,18 +556,31 @@
   color: #eee;
 }
 
+.news__list {
+  color: #5b6567;
+  list-style: square;
+  margin: 20px 0 0 70px;
+  /* margin-top: 20px;
+  margin-left: 70px; */
+  font-size: 1.4rem;
+}
+
+.news__list li {
+  line-height: 1.5;
+}
+
 
 /* 상품 소개 */
 
 .favorite {
   height: 800px;
-  padding-top: 100px;
-  text-transform: uppercase;
   background-image: url(/starbucksimg/fav_prod_bg_new.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #fff;
+  text-transform: uppercase;
+  padding-top: 100px;
 }
 
 .favorite .inner {
@@ -616,9 +618,9 @@
 
 .favorite__subParagraph1 {
   display: inline-block;
-  margin-top: 40px;
-  text-align: right;
   width: 400px;
+  text-align: right;
+  margin-top: 40px;
   opacity: 0;
   animation: negativexAni 1.5s 0.58s ease both;
 }
@@ -642,15 +644,30 @@
 
 .favorite__subParagraph2 span {
   display: block;
-  font-size: 1.6rem;
-  text-align: right;
   width: 400px;
+  text-align: right;
   line-height: 1.5;
+  font-size: 1.6rem;
   font-weight: 200;
 }
 
 .favorite__subParagraph2 span em {
   font-weight: 400;
+}
+
+.favorite__link {
+  margin: 40px 0 0 275px;
+  /* margin-left: 275px;
+  margin-top: 40px; */
+  border: 2px solid #fff;
+  color: #fff;
+  animation: opacityAni 3s ease-in-out both;
+  opacity: 0;
+}
+
+.favorite__link:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .favorite__img {
@@ -660,27 +677,34 @@
   left: 540px;
 }
 
-.favorite__link {
-  margin-left: 275px;
-  margin-top: 40px;
-  border: 2px solid #fff;
-  color: #fff;
-  animation: opacityAni 3s ease-in-out both;
-  opacity: 0;
-}
-.favorite__link:hover {
-  background-color: #fff;
-  color: #000;
-}
-
 
 /* 매거진 */
 
 .magazine {
   background-color: white;
   height: 700px;
-  padding-top: 100px;
   overflow: hidden;
+  padding-top: 100px;
+}
+
+.magazine .inner::before {
+  content: "";
+  position: absolute;
+  top: 340px;
+  left: 320px;
+  width: 950px;
+  height: 1px;
+  background-color: #aaa;
+}
+
+.magazine .inner::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 500px;
+  width: 1px;
+  height: 450px;
+  background-color: #aaa;
 }
 
 .magazine .inner{
@@ -697,12 +721,12 @@
 
 .magazine__link{
   position: absolute;
-  text-transform: uppercase;
-  padding: 10px 10px;
-  font-size: 1.9rem;
-  letter-spacing: 6px;
   top: 350px;
   left: 550px;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  letter-spacing: 6px;
+  padding: 10px 10px;
   transition: .5s;
   animation: magazineAni 2.5s ease-in-out .5s both;
 } 
@@ -710,27 +734,6 @@
 .magazine__link:hover{
   background-color: #976d3f;
   color: #fff;
-}
-
-.magazine .inner::before {
-  content: "";
-  position: absolute;
-  top: 340px;
-  left: 320px;
-  /* height: 30px; */
-  width: 950px;
-  height: 1px;
-  background-color: #aaa;
-}
-
-.magazine .inner::after {
-  content: "";
-  position: absolute;
-  top: 48px;
-  left: 500px;
-  width: 1px;
-  height: 450px;
-  background-color: #aaa;
 }
 
 
@@ -751,8 +754,9 @@
 
 .store__wrapper{
   float: right;
-  padding-top: 100px;
-  padding-right: 80px;
+  padding: 100px 0 0 80px;
+  /* padding-top: 100px;
+  padding-right: 80px; */
 }
 
 .store__heading{
@@ -776,11 +780,11 @@
 }
 
 .store__paragraph{
-  animation: positivexAni  3s 0.3s both;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 30px;
+  animation: positivexAni  3s 0.3s both;
 }
 
 .store__paragraph span{
@@ -802,47 +806,47 @@
 }
 
 .store__sample1{
-  animation: opacityAni  2s;
-  z-index: 5;
-  background-image: url(/starbucksimg/store_exp_img01.png);
-  width: 228px;
-  height: 228px;
   position: absolute;
   top: 150px;
   left: 300px;
+  width: 228px;
+  height: 228px;
+  background-image: url(/starbucksimg/store_exp_img01.png);
+  z-index: 5;
+  animation: opacityAni  2s;
 }
 
 .store__sample2{
-  animation: opacityAni  2s;
-  z-index: 4;
-  background-image: url(/starbucksimg/store_exp_img02.png);
-  width: 366px;
-  height: 312px;
   position: absolute;
   top: 0px;
   left: 70px;
+  width: 366px;
+  height: 312px;
+  background-image: url(/starbucksimg/store_exp_img02.png);
+  z-index: 4;
+  animation: opacityAni  2s;
 }
 
 .store__sample3{
-  animation: opacityAni  2s;
-  z-index: 4;
-  background-image: url(/starbucksimg/store_exp_img03.png);
-  width: 343px;
-  height: 142px;
   position: absolute;
   top: -60px;
   left: 430px;
+  width: 343px;
+  height: 142px;
+  background-image: url(/starbucksimg/store_exp_img03.png);
+  z-index: 4;
+  animation: opacityAni  2s;
 }
 
 .store__sample4{
-  animation: opacityAni  2s;
-  z-index: 4;
-  background-image: url(/starbucksimg/store_exp_img04.png);
-  width: 230px;
-  height: 102px;
   position: absolute;
   top: 298px;
   right: 0;
+  width: 230px;
+  height: 102px;
+  background-image: url(/starbucksimg/store_exp_img04.png);
+  z-index: 4;
+  animation: opacityAni  2s;
 }
 
 
@@ -881,10 +885,10 @@
 
 .footer__awardList {
   background-color: #282828;
-  margin-top: 40px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -900,13 +904,14 @@
   font-size: 0;
   color: #ccc;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px 0;
+  /* margin-top: 30px;
+  margin-bottom: 10px; */
 }
 
 .footer__nav li {
-  font-size: 1.2rem;
   display: inline-block;
+  font-size: 1.2rem;
   font-weight: 500;
   border-right: 1px solid rgba(170, 170, 170, 0.1);
 }
@@ -937,17 +942,18 @@
 }
 
 .footer__siteMap a {
-  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-  margin-top: 10px;
-  margin-right: 10px;
   width: 120px;
   height: 35px;
-  border: 2px solid #eee;
   font-size: 1.3rem;
+  color: #fff;
+  border-radius: 3px;
+  border: 2px solid #eee;
+  margin: 10px 10px 0 0;
+  /* margin-top: 10px;
+  margin-right: 10px; */
 }
 
 .footer__siteMap a:hover {
@@ -959,10 +965,10 @@
 
 .address {
   color: #999;
-  margin: 30px 0;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 400;
+  margin: 30px 0;
 }
 
 .address span {
@@ -970,8 +976,8 @@
 }
 
 .copyright {
-  color: #999;
   display: block;
+  color: #999;
   text-align: center;
   font-size: 1.2rem;
 }
