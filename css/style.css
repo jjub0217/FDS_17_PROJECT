@@ -550,7 +550,7 @@ figcaption div::after {
 .news {
   height: 400px;
   background-repeat: no-repeat;
-  background-color: #c3ded9;
+  background-color: #C3D2D9;
   background-position: 600px 60px;
   background-size: 1000px;
   animation: newsanime 2s forwards;
