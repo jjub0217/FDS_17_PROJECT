@@ -272,7 +272,7 @@
 }
 
 .notice__list li {
-  animation: listanime 5s linear infinite alternate;
+  animation: noticeAni 5s linear infinite alternate;
   margin-bottom: 10px;
 }
 
