@@ -135,7 +135,10 @@
 /* 슬로건 */
 
 .slogan {
-  background: #70c4d9 url(/starbucksimg/summer3_mv_bg.jpg) no-repeat center;
+  background-color: #70c4d9;
+  background-image: url(../starbucksimg/summer3_mv_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 650px;
   width: 100%;
 }
@@ -458,7 +461,6 @@
 
 .ad {
   height: 570px;
-  /* background: url(/starbucksimg/20_summer_rwanda_bg.jpg) cover center no-repeat; */
   background-image: url(../starbucksimg/20_summer_rwanda_bg.jpg);
   background-size: cover;
   background-position: center;
@@ -518,7 +520,6 @@
 
 .news {
   height: 400px;
-  /* background: url(/starbucksimg/summer2_reserve_bean.png) no-repeat 1000px right top 50px ; */
   background-image: url(../starbucksimg/summer2_reserve_bean.png);
   background-color: #C3D2D9;
   background-repeat: no-repeat;
@@ -549,7 +550,7 @@
 }
 
 .news a:hover {
-  background: #000;
+  background-color: #000;
   color: #eee;
   text-decoration: underline;
 }
@@ -561,7 +562,7 @@
 }
 
 .news__link:hover {
-  background: #000;
+  background-color: #000;
   color: #eee;
 }
 
