@@ -833,12 +833,12 @@ figcaption div::after {
   text-align: center;
   border: 2px solid #000;
   border-radius: 3px;
+  transition: 1s;
 }
 .store__link:hover{
   color: #fff;
   text-decoration: underline;
   background-color: #000;
-  transition: 1s;
 }
 .store__sample1{
   animation: storeImgAni 2s;
@@ -965,6 +965,7 @@ figcaption div::after {
 .footer__siteMap a:hover {
   text-decoration: underline;
 }
+
 /*address*/
 .address {
   color: #999;
