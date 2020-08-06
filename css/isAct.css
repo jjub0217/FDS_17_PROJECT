@@ -63,8 +63,7 @@
   color: #64a70b;
   font-size: 1.2rem;
 }
-.nav__desList2 dt {
-}
+
 .nav__desList3 dt:nth-child(3)::after,
 .nav__desList2 dt::after {
   content: "NEW";

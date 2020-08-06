@@ -1038,8 +1038,7 @@ figcaption div::after {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.footer__awardList li {
-}
+
 .footer__awardList img {
   width: 180px;
   height: 40px;
