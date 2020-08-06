@@ -579,10 +579,8 @@
   position: relative;
 }
 .favorite__heading {
-  animation: negativexAni  2s ease-in-out;
+  animation: negativexAni 1.5s ease;
 }
-
-
 
 .favorite__heading span {
   display: block;
@@ -609,16 +607,14 @@
   margin-top: 10px;
 }
 
-.favorite__subParagraph1,
-.favorite__subParagraph2 {
-  animation: negativexAni  2s 300ms ease-in-out;
-}
 
 .favorite__subParagraph1 {
   display: inline-block;
   margin-top: 40px;
   text-align: right;
   width: 400px;
+  opacity: 0;
+  animation: negativexAni 1.5s 0.58s ease both;
 }
 
 
@@ -637,6 +633,7 @@
 
 .favorite__subParagraph2 {
   margin-top: 20px;
+  animation: negativexAni 2s ease;
 }
 
 .favorite__subParagraph2 span {
