@@ -593,7 +593,7 @@
 
 .favorite__heading span {
   display: block;
-  width: 400px;
+  width: 410px;
   text-align: right;
 }
 
@@ -618,7 +618,7 @@
 
 .favorite__subParagraph1 {
   display: inline-block;
-  width: 400px;
+  width: 410px;
   text-align: right;
   margin-top: 40px;
   opacity: 0;
@@ -644,7 +644,7 @@
 
 .favorite__subParagraph2 span {
   display: block;
-  width: 400px;
+  width: 410px;
   text-align: right;
   line-height: 1.5;
   font-size: 1.6rem;
@@ -656,7 +656,7 @@
 }
 
 .favorite__link {
-  margin: 40px 0 0 275px;
+  margin: 40px 0 0 285px;
   /* margin-left: 275px;
   margin-top: 40px; */
   border: 2px solid #fff;
