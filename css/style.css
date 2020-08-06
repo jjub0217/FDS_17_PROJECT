@@ -800,12 +800,10 @@
 .store__paragraph span{
   display: block;
 }
+
 .store__paragraph span:nth-child(1) em span{
   display: inline;
 }
-/* span[aria-hidden=true]{
-  display: inline;
-} */
 
 .store__paragraph em{
   font-weight: 700;
