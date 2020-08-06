@@ -46,7 +46,7 @@
   display: inline-block;
 }
 
-.nav__menuItem>a {
+.nav__menuItem > a {
   display: block;
   padding: 10px 20px 30px 20px;
   font-size: 1.4rem;
@@ -54,11 +54,14 @@
   text-transform: uppercase;
 }
 
-.nav__menuItem>a:hover {
+.nav__menuItem > a:hover {
   background-color: #2c2a29;
   color: #669900;
   text-decoration: underline;
 }
+
+
+/* 사용자 서포트*/
 
 .unList__userLink {
   font-size: 0;
@@ -116,15 +119,13 @@
   overflow: hidden;
   padding-top: 34px;
   margin-right: 60px;
-  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center;
+  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
 }
 
 .form__btnSearch:focus,
 .form__btnSearch:hover {
   background-position: right;
 }
-
-
 
 
 /* 슬로건 */
@@ -137,7 +138,6 @@
   background-repeat: no-repeat;
 }
 
-
 .slogan .inner {
   margin: 0 auto;
   position: relative;
@@ -147,17 +147,6 @@
   padding-top: 50px;
   opacity: 0;
   animation: opacityAni 1s ease-in-out 1.5s both;
-}
-
-.slogan__link {
-  margin-top: 40px;
-  border: 2px solid #fff;
-  color: #fff;
-  opacity: 0;
-  animation: opacityAni  1s ease-in-out 2s both;
-}
-.slogan__link:hover {
-  background-color: #00A252;
 }
 
 .slogan__figure1 {
@@ -205,6 +194,20 @@
   font-weight: 400;
 }
 
+.slogan figcaption span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.slogan span:nth-child(1)::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  margin: 5px 0;
+}
+
 .slogan__figcaption1 {
   position: absolute;
   top: 220px;
@@ -223,37 +226,21 @@
   left: 80px;
 }
 
-.slogan figcaption span {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.4;
-}
-
-.slogan span:nth-child(1)::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #fff;
-  margin: 5px 0;
-}
-
 .slogan__figcaption2 span:nth-child(1)::after {
   border: none;
 }
 
-figcaption div {
-  text-align: center;
-  text-transform: uppercase;
+.slogan__link {
+  margin-top: 40px;
+  border: 2px solid #fff;
+  color: #fff;
+  opacity: 0;
+  animation: opacityAni  1s ease-in-out 2s both;
 }
 
-figcaption div::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #fff;
-  margin: 0;
-  margin: 10px 0;
+.slogan__link:hover {
+  background-color: #00A252;
 }
-
 
 
 /* 공지사항 */
@@ -321,65 +308,63 @@ figcaption div::after {
   background-image: url(/starbucksimg/reward_star_bg_m.png),
     url(/starbucksimg/272727.png), url(/starbucksimg/reward_texbg.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 20% 100%, 20% 100%, 80% 100%;
-  background-position: left 250px top 0px, left 0 top 0px, right 0px top 0px;
+  background-size: 450px 100%, 190px 100%, 100% 100%;
+  background-position: left 80px top 0px, left 0 top 0px, right 0px top 0px;
   padding-left: 240px;
   display: flex;
   flex-flow: row nowrap;
-  align-content: center;
+  align-items: center;
+
+  /* justify-content: center; */
 }
 
 .memberService .inner {
-  margin-left: 100px;
+  padding-left: 150px;
   display: flex;
   flex-flow: column;
   position: relative;
+  margin: 0 auto;
+  min-width: 1000px;
 }
-
 .memberService__heading {
   font-size: 2rem;
   font-weight: 400;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   letter-spacing: 1px;
   padding-bottom: 10px;
   margin-top: 20px;
+  /* margin-left: 150px; */
 }
-
 .memberService__heading em {
   font-weight: 700;
 }
-
 .memberService__logDes {
   font-size: 1.5rem;
   font-weight: 400;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   margin-bottom: 20px;
   color: #666;
   display: flex;
   flex-flow: row nowrap;
   line-height: 1.4;
   word-spacing: 1px;
+  /* margin-left: 150px; */
 }
-
 .memberService__logDes p em {
   display: inline-block;
 }
-
 .memberService__logDes p {
   flex-grow: 1;
 }
-
 .memberService__logDes em {
   font-weight: 700;
   color: #555;
 }
-
 .memberService__signGroup {
   position: absolute;
   top: 35px;
   right: 50px;
 }
-
 .memberService__logDes-signUp {
   display: inline-block;
   padding: 8px 30px;
@@ -391,7 +376,6 @@ figcaption div::after {
   margin-top: 10px;
   margin-right: 5px;
 }
-
 .memberService__logDes-signIn {
   display: inline-block;
   padding: 8px 35px;
@@ -401,63 +385,54 @@ figcaption div::after {
   border-radius: 3px;
   transition: all 500ms linear;
 }
-
 .memberService__logDes-signUp:hover {
   text-decoration: underline;
   background-color: transparent;
   color: #000;
 }
-
 .memberService__logDes-signIn:hover {
   text-decoration: underline;
   background-color: #000;
   color: #fff;
 }
-
 .memberService__giftDes {
-  padding-left: 25px;
+  /* padding-left: 25px; */
   margin-top: 20px;
   font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 400;
   color: #666;
   position: relative;
+  /* margin-left: 150px; */
 }
-
 .memberService__giftDes em {
   font-weight: 700;
   display: block;
   color: #555;
 }
-
 .memberService__giftLink {
   position: absolute;
   top: 0;
   right: 50px;
-  border: 2px solid #000;
+  padding: 8px 50px;
+  border: 1px solid #000;
   background-color: transparent;
   color: #000;
   border-radius: 3px;
-  width: 253px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   transition: all 500ms linear;
-  height: 40px;
+  transition: all 500ms linear;
 }
-
 .memberService__giftLink:hover {
   text-decoration: underline;
   background-color: #000;
   color: #fff;
 }
-
 .memberService__logo {
   order: -1;
   width: 200px;
   height: 50px;
-  align-self: center;
+  margin-bottom: 50px;
+  margin-left: -60px;
 }
 
 .memberService__logDes span,
@@ -869,7 +844,7 @@ figcaption div::after {
 }
 .footer__list {
   color: #eee;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .footer__list li:nth-child(1) {
   font-size: 1.4rem;
@@ -889,27 +864,30 @@ figcaption div::after {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
-
 .footer__awardList img {
   width: 180px;
   height: 40px;
 }
+
 /*footer__nav*/
 .footer__nav {
   font-size: 0;
   color: #ccc;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .footer__nav li {
   font-size: 1.2rem;
   display: inline-block;
   font-weight: 500;
-  border-right: 1px solid #aaa;
+  border-right: 1px solid rgba(170, 170, 170, 0.1);
 }
 .footer__nav li:first-child {
   color: #00b050;
+  font-size: 900;
 }
 .footer__nav li:last-child {
   border-right: none;
@@ -922,21 +900,21 @@ figcaption div::after {
 }
 /*siteMap*/
 .footer__siteMap {
-  font-size: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .footer__siteMap a {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-top: 10px;
   margin-right: 10px;
-  padding: 5px 15px;
+  width: 120px;
+  height: 35px;
   border: 2px solid #eee;
-  font-size: 1.2rem;
-  display: inline-block;
+  font-size: 1.3rem;
 }
 .footer__siteMap a:hover {
   text-decoration: underline;
@@ -945,10 +923,13 @@ figcaption div::after {
 /*address*/
 .address {
   color: #999;
-  margin-top: 30px;
+  margin: 30px 0;
   text-align: center;
-  padding-bottom: 30px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.address span {
+  margin-left: 10px;
 }
 .copyright {
   color: #999;
