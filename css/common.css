@@ -40,6 +40,11 @@ a:focus{
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+span[aria-hidden=true]{
+  /* color: blue; */
+  display: inline;
+}
+
 .clearfix::after {
   content: "";
   display: block;

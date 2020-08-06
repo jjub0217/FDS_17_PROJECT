@@ -54,7 +54,9 @@
   padding: 10px 20px 30px 20px;
 }
 
-.nav__menuItem > a:hover {
+.nav__menuItem > a:hover,
+.nav__menuItem > a:focus
+ {
   background-color: #2c2a29;
   color: #669900;
   text-decoration: underline;
@@ -86,46 +88,45 @@
 }
 
 .form {
-  position: relative;
   margin: 10px 40px 0 5px;
+  display: flex;
 }
-
-.form input {
-  position: absolute;
-  display: none;
-  top: 1px;
-  left: 0;
-  width: 32px;
-  height: 34px;
-  padding: 5px 10px 5px 5px;
+.form fieldset {
+  display: contents;
+}
+.form [type="search"] {
   border: 0;
-  border-radius: 5px;
+  width: 1px;
+  height: 1px; 
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  overflow: hidden;
+  transform: translateX(6px);
+  height: 37px;
+  transition: 1s;
+  border-radius: 5px 0 0 5px;
+  /* width: calc(100% - 38px); */
 }
-
-.form [type="search"].isSearch {
-  display: block;
-  z-index: 1;
-  width: calc(100% - 32px);
-}
-
 .form__btnSearch {
-  padding: 34px 0 0 0;
+  padding: 0;
   border: 0;
   width: 32px;
-  height: 34px;
+  height: 37px;
   border: 1px solid #aaa;
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
-  margin-right: 60px;
+  padding-top: 34px;
   background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
 }
-
-.form__btnSearch:focus,
-.form__btnSearch:hover {
-  background-position: right;
+.form [type="search"].isSearch {
+  width: 150px;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
 }
-
+.form__btnSearch.isSearch {
+}
 
 /* 슬로건 */
 
@@ -558,7 +559,6 @@
 
 .news__list {
   color: #5b6567;
-  list-style: square;
   margin: 20px 0 0 70px;
   /* margin-top: 20px;
   margin-left: 70px; */
@@ -566,9 +566,18 @@
 }
 
 .news__list li {
+  list-style: none;
   line-height: 1.5;
 }
 
+.news__list li::before{
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  background-color: #5b6567;
+}
 
 /* 상품 소개 */
 
@@ -774,6 +783,7 @@
   font-weight: 700;
 }
 
+
 .store__heading span:last-child{
   font-size: 1.8rem;
   font-weight: 400;
@@ -790,6 +800,12 @@
 .store__paragraph span{
   display: block;
 }
+.store__paragraph span:nth-child(1) em span{
+  display: inline;
+}
+/* span[aria-hidden=true]{
+  display: inline;
+} */
 
 .store__paragraph em{
   font-weight: 700;
@@ -813,6 +829,8 @@
   height: 228px;
   background-image: url(../starbucksimg/store_exp_img01.png);
   z-index: 5;
+  text-indent: -70px;
+  overflow: hidden;
   animation: opacityAni  2s;
 }
 
@@ -824,6 +842,8 @@
   height: 312px;
   background-image: url(../starbucksimg/store_exp_img02.png);
   z-index: 4;
+  text-indent: -70px;
+  overflow: hidden;
   animation: opacityAni  2s;
 }
 
