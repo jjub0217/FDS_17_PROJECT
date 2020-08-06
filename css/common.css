@@ -73,3 +73,66 @@ a:focus{
 .btn-com:hover {
   text-decoration: underline;
 }
+
+@keyframes pxAni {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes mxAni {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes newsAni {
+  0% {
+    opacity: 0;
+    background-image: url(/starbucksimg/summer2_reserve_bean.png);
+  }
+  100% {
+    opacity: 1;
+    background-image: url(/starbucksimg/summer2_reserve_bean.png);
+  }
+}
+@keyframes opcAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes magaznieAni{
+  0%{
+    transform: translateX(400%);
+  }
+  100%
+  {
+    transform: translateX(0%);
+  }
+}
+@keyframes storeAni{
+  0%{
+    transform: translateX(600%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes anime {
+  0% {
+    width: 32px;
+  }
+  100% {
+    width: 180px;
+  }
+}

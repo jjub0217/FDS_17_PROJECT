@@ -125,15 +125,7 @@
   animation: anime 500ms both;
 }
 
-@keyframes anime {
-  0% {
-    width: 32px;
-  }
 
-  100% {
-    width: 180px;
-  }
-}
 
 
 /* 슬로건 */
@@ -276,15 +268,6 @@ figcaption div::after {
   margin: 10px 0;
 }
 
-@keyframes sloganAni {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 
 /* 공지사항 */
@@ -341,15 +324,6 @@ figcaption div::after {
   line-height: 0.8;
 }
 
-@keyframes listanime {
-  0% {
-    transform: translateY(0%);
-  }
-
-  100% {
-    transform: translateY(-510%);
-  }
-}
 
 
 /* 리워드 */
@@ -568,25 +542,7 @@ figcaption div::after {
   text-decoration: underline;
 }
 
-@keyframes adanime {
-  0% {
-    transform: translateX(200%);
-  }
 
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes adanime1 {
-  0% {
-    transform: translateX(-200%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
 
 
 /* 새소식 */
@@ -638,17 +594,6 @@ figcaption div::after {
   line-height: 1.5;
 }
 
-@keyframes newsanime {
-  0% {
-    opacity: 0;
-    background-image: url(/starbucksimg/summer2_reserve_bean.png);
-  }
-
-  100% {
-    opacity: 1;
-    background-image: url(/starbucksimg/summer2_reserve_bean.png);
-  }
-}
 
 .favorite {
   height: 800px;
@@ -767,25 +712,7 @@ figcaption div::after {
   text-decoration: underline;
 }
 
-@keyframes adanime1 {
-  0% {
-    transform: translateX(-200%);
-  }
 
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes favoriteAni {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 
 /* 매거진 */
@@ -826,26 +753,7 @@ figcaption div::after {
   color: #fff;
 }
 
-@keyframes magazineTop{
-  0%{
-    transform: translateX(200%);
-  }
-  100%
-  {
-    transform: translateX(10%);
-  }
-}
 
-@keyframes magazineBottom{
-  0%{
-
-    transform: translateX(400%);
-  }
-  100%
-  {
-    transform: translateX(0%);
-  }
-}
 
 .magazine .inner::before {
   content: "";
@@ -972,35 +880,7 @@ figcaption div::after {
   top: 298px;
   right: 0;
 }
-/* Store Animation */
-@keyframes storeImgAni{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-@keyframes storeAni{
-  0%{
-    transform: translateX(300%);
-    opacity: 0;
-  }
-  100%{
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-@keyframes linkAni{
-  0%{
-    transform: translateX(600%);
-    opacity: 0;
-  }
-  100%{
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
+
 /* 푸터 */
 .footer {
   background-color: #2c2a29;
