@@ -122,7 +122,6 @@
 .form__btnSearch:focus,
 .form__btnSearch:hover {
   background-position: right;
-  animation: anime 500ms both;
 }
 
 
@@ -147,31 +146,18 @@
 .slogan__img {
   padding-top: 50px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1.5s both;
+  animation: opacityAni 1s ease-in-out 1.5s both;
 }
 
 .slogan__link {
-  margin: 0;
-  padding: 0;
-  display: block;
-  width: 123px;
-  height: 40px;
-  text-align: center;
   margin-top: 40px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  border: 2px #fff solid;
-  padding: 10px 25px;
+  border: 2px solid #fff;
   color: #fff;
-  border-radius: 3px;
-  transition: 500ms;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 2s both;
+  animation: opacityAni  1s ease-in-out 2s both;
 }
-
 .slogan__link:hover {
-  background-color: #00a252;
-  text-decoration: underline;
+  background-color: #00A252;
 }
 
 .slogan__figure1 {
@@ -179,7 +165,7 @@
   top: 240px;
   left: 35%;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 0.5s both;
+  animation: opacityAni  1s ease-in-out 0.5s both;
 }
 
 .slogan__figure2 {
@@ -187,7 +173,7 @@
   top: 80px;
   left: 55%;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out both;
+  animation: opacityAni  1s ease-in-out both;
 }
 
 .slogan__figure3 {
@@ -195,7 +181,7 @@
   top: 200px;
   left: 65%;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1s both;
+  animation: opacityAni  1s ease-in-out 1s both;
 }
 
 .slogan__figure1 img {
@@ -448,12 +434,17 @@ figcaption div::after {
   position: absolute;
   top: 0;
   right: 50px;
-  padding: 8px 50px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   background-color: transparent;
   color: #000;
   border-radius: 3px;
+  width: 253px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   transition: all 500ms linear;
+  height: 40px;
 }
 
 .memberService__giftLink:hover {
@@ -491,8 +482,8 @@ figcaption div::after {
   float: left;
   padding-left: 150px;
   padding-top: 75px;
-  animation: adanime1 2s;
   padding-bottom: 55px;
+  animation: negativexAni  2s;
 }
 
 .ad__figcaption {
@@ -500,7 +491,7 @@ figcaption div::after {
   padding-left: 115px;
   padding-top: 170px;
   line-height: 1.5;
-  animation: adanime 2s;
+  animation: positivexAni 2s;
 }
 
 .ad__figcaption-selling {
@@ -525,21 +516,14 @@ figcaption div::after {
 }
 
 .ad__link {
-  font-size: 1.5rem;
-  display: inline-block;
-  padding: 5px 15px;
   border: 2px solid #fff;
-  background-color: transparent;
   color: #fff;
-  border-radius: 3px;
-  transition: all 500ms linear;
   margin-top: 45px;
 }
 
 .ad__link:hover {
-  color: #292929;
+  color: #000;
   background-color: #fff;
-  text-decoration: underline;
 }
 
 
@@ -553,7 +537,7 @@ figcaption div::after {
   background-color: #C3D2D9;
   background-position: 600px 60px;
   background-size: 1000px;
-  animation: newsanime 2s forwards;
+  animation: newsAni  2s forwards;
 }
 
 .news__heading {
@@ -594,6 +578,15 @@ figcaption div::after {
   line-height: 1.5;
 }
 
+.news__link {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.news__link:hover {
+  background: #000;
+  color: #eee;
+}
 
 .favorite {
   height: 800px;
@@ -606,14 +599,15 @@ figcaption div::after {
   color: #fff;
 }
 
+
+.favorite .inner {
+  position: relative;
+}
 .favorite__heading {
-  animation: adanime1 2s ease-in-out;
+  animation: negativexAni  2s ease-in-out;
 }
 
-.favorite__subParagraph1,
-.favorite__subParagraph2 {
-  animation: adanime1 2s 300ms ease-in-out;
-}
+
 
 .favorite__heading span {
   display: block;
@@ -640,6 +634,11 @@ figcaption div::after {
   margin-top: 10px;
 }
 
+.favorite__subParagraph1,
+.favorite__subParagraph2 {
+  animation: negativexAni  2s 300ms ease-in-out;
+}
+
 .favorite__subParagraph1 {
   display: inline-block;
   margin-top: 40px;
@@ -647,9 +646,7 @@ figcaption div::after {
   width: 400px;
 }
 
-.favorite .inner {
-  position: relative;
-}
+
 
 .favorite__subParagraph1 span {
   display: block;
@@ -689,27 +686,15 @@ figcaption div::after {
 
 .favorite__link {
   margin-left: 275px;
-  padding: 0;
-  display: block;
-  width: 123px;
-  height: 40px;
-  text-align: center;
   margin-top: 40px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  border: 2px #fff solid;
-  padding: 10px 25px;
+  border: 2px solid #fff;
   color: #fff;
-  border-radius: 3px;
-  transition: 500ms;
-  animation: favoriteAni 3s ease-in-out both;
+  animation: opacityAni 3s ease-in-out both;
   opacity: 0;
 }
-
 .favorite__link:hover {
   background-color: #fff;
   color: #000;
-  text-decoration: underline;
 }
 
 
@@ -731,9 +716,9 @@ figcaption div::after {
 .magazine__meet {
   position: absolute;
   top: 180px;
-  right: 30px;
+  right: -20px;
   transition: 1s;
-  animation: magazineTop 2.5s ease-in-out both;
+  animation: positivexAni  2.5s ease-in-out both;
 }
 
 .magazine__link{
@@ -745,7 +730,7 @@ figcaption div::after {
   top: 350px;
   left: 550px;
   transition: .5s;
-  animation: magazineBottom 2.5s ease-in-out .5s both;
+  animation: magazineAni 2.5s ease-in-out .5s both;
 } 
 
 .magazine__link:hover{
@@ -770,7 +755,7 @@ figcaption div::after {
 .magazine .inner::after {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 48px;
   left: 500px;
   width: 1px;
   height: 450px;
@@ -795,7 +780,7 @@ figcaption div::after {
   padding-right: 80px;
 }
 .store__heading{
-  animation: storeAni 3s both;
+  animation: positivexAni  3s both;
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -811,7 +796,7 @@ figcaption div::after {
   font-weight: 400;
 }
 .store__paragraph{
-  animation: storeAni 3s 0.3s both;
+  animation: positivexAni  3s 0.3s both;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -823,25 +808,16 @@ figcaption div::after {
 .store__paragraph em{
   font-weight: 700;
 }
-.store__link{
-  animation: linkAni 3s 1s both;
-  display: block;
-  width: 120px;
-  font-size: 1.6rem;
-  font-weight: 400;
-  padding: 10px 20px;
-  text-align: center;
-  border: 2px solid #000;
-  border-radius: 3px;
+.store__link {
+  animation: storeAni 3s 1s both;
   transition: 1s;
 }
-.store__link:hover{
+.store__link:hover {
   color: #fff;
-  text-decoration: underline;
   background-color: #000;
 }
 .store__sample1{
-  animation: storeImgAni 2s;
+  animation: opacityAni  2s;
   z-index: 5;
   background-image: url(/starbucksimg/store_exp_img01.png);
   width: 228px;
@@ -851,7 +827,7 @@ figcaption div::after {
   left: 300px;
 }
 .store__sample2{
-  animation: storeImgAni 2s;
+  animation: opacityAni  2s;
   z-index: 4;
   background-image: url(/starbucksimg/store_exp_img02.png);
   width: 366px;
@@ -861,7 +837,7 @@ figcaption div::after {
   left: 70px;
 }
 .store__sample3{
-  animation: storeImgAni 2s;
+  animation: opacityAni  2s;
   z-index: 4;
   background-image: url(/starbucksimg/store_exp_img03.png);
   width: 343px;
@@ -871,7 +847,7 @@ figcaption div::after {
   left: 430px;
 }
 .store__sample4{
-  animation: storeImgAni 2s;
+  animation: opacityAni  2s;
   z-index: 4;
   background-image: url(/starbucksimg/store_exp_img04.png);
   width: 230px;
